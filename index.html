@@ -4,20 +4,32 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>test</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Recursive:wght@300..1000&display=swap"
+			rel="stylesheet"
+		/>
 		<style>
 			body {
 				margin: 0;
 			}
 			h1,
 			h2,
-			h3 {
+			h3,
+			ul,
+			li,
+			a {
 				margin: 0;
+				padding: 0;
+				text-decoration: none;
 			}
+
 			.container {
 				width: 92%;
 				margin: auto;
 				height: 100%;
-				border: 2px solid red;
+				/* border: 2px solid red; */
 			}
 
 			header,
@@ -25,27 +37,62 @@
 				background-color: #232830;
 				color: white;
 			}
+
 			.main-navbar {
 				height: 80px;
 				display: flex;
 				justify-content: space-between;
 				align-items: center;
 			}
+			.main-navbar h1 {
+				font-size: 22px;
+				font-weight: 400;
+				line-height: 45px;
+				font-family: "Poppins", serif;
+			}
+			.main-navbar .links {
+				list-style-type: none;
+			}
+
+			.main-navbar .links a {
+				font-family: "Poppins", serif;
+				font-weight: 400;
+				font-size: 16px;
+				line-height: 36px;
+				text-decoration: none;
+				color: white;
+				margin-left: 8px;
+			}
+			.main-navbar .links a:hover {
+				color: #ff7575;
+			}
+
 			.hero-section {
 				text-align: center;
 				padding: 50px 0px;
 			}
 			.hero-section h1 {
 				color: #ff7575;
-				font-size: 40px;
+				font-size: 35px;
 				font-weight: 400;
 				font-style: italic;
 				line-height: 85.2px;
+				font-family: "Recursive", serif;
 			}
 			.hero-section h2 {
-				font-size: 22px;
+				font-size: 19px;
 				font-weight: 400;
 				line-height: 43.5px;
+				font-family: "Poppins", serif;
+			}
+
+			.secondary-navbar a {
+				font-size: 16px;
+				font-weight: 400;
+				line-height: 34.2px;
+				font-style: italic;
+				color: #909090;
+				font-family: "Recursive", serif;
 			}
 
 			/* tablet style  */
@@ -59,11 +106,28 @@
 				.container {
 					width: 1236px;
 				}
+				.main-navbar h1 {
+					font-size: 30px;
+				}
+				.main-navbar .links a {
+					font-size: 24px;
+					margin-left: 36px;
+				}
+				.hero-section {
+					padding: 73px 0px 99px;
+				}
+				.hero-section img {
+					margin-bottom: 50px;
+				}
 				.hero-section h1 {
 					font-size: 71px;
+					margin-bottom: 17px;
 				}
 				.hero-section h2 {
 					font-size: 29px;
+				}
+				.secondary-navbar a {
+					font-size: 27px;
 				}
 			}
 		</style>
@@ -73,8 +137,12 @@
 		<header>
 			<div class="container">
 				<nav class="main-navbar">
-					<div class="logo">logo</div>
-					<div class="links">links</div>
+					<h1 class="logo">writings.dev</h1>
+					<div class="links">
+						<a href="http://">categories</a>
+						<a href="http://">articles</a>
+						<a href="http://">about</a>
+					</div>
 				</nav>
 			</div>
 		</header>
@@ -85,6 +153,24 @@
 					<img src="/public/Logo.png" alt="" />
 					<h1 class="">Writings for Developers</h1>
 					<h2 class="">Curated collection of articles for busy developers</h2>
+				</div>
+			</div>
+		</section>
+
+		<section>
+			<div class="container">
+				<div class="secondary-navbar" style="display: flex; gap: 36px">
+					<div class="menu-icon" style="display: flex; gap: 10px">
+						<a href=""><img src="/public//Grid Icon.png" alt="" /></a>
+						<a href=""><img src="/public/List Icon.png" alt="" /></a>
+					</div>
+					<a href="">JavaScript</a>
+					<a href="">DevOps</a>
+					<a href="">Cloud</a>
+					<a href="">Terraform</a>
+					<a href="">Architecture</a>
+					<a href="">Scalability</a>
+					<a href="">Explainers</a>
 				</div>
 			</div>
 		</section>
