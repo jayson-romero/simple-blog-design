@@ -10,133 +10,13 @@
 			href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Recursive:wght@300..1000&display=swap"
 			rel="stylesheet"
 		/>
-		<style>
-			body {
-				margin: 0;
-			}
-			h1,
-			h2,
-			h3,
-			ul,
-			li,
-			a {
-				margin: 0;
-				padding: 0;
-				text-decoration: none;
-			}
-
-			.container {
-				width: 92%;
-				margin: auto;
-				height: 100%;
-				/* border: 2px solid red; */
-			}
-
-			header,
-			section {
-				background-color: #232830;
-				color: white;
-			}
-
-			.main-navbar {
-				height: 80px;
-				display: flex;
-				justify-content: space-between;
-				align-items: center;
-			}
-			.main-navbar h1 {
-				font-size: 22px;
-				font-weight: 400;
-				line-height: 45px;
-				font-family: "Poppins", serif;
-			}
-			.main-navbar .links {
-				list-style-type: none;
-			}
-
-			.main-navbar .links a {
-				font-family: "Poppins", serif;
-				font-weight: 400;
-				font-size: 16px;
-				line-height: 36px;
-				text-decoration: none;
-				color: white;
-				margin-left: 8px;
-			}
-			.main-navbar .links a:hover {
-				color: #ff7575;
-			}
-
-			.hero-section {
-				text-align: center;
-				padding: 50px 0px;
-			}
-			.hero-section h1 {
-				color: #ff7575;
-				font-size: 35px;
-				font-weight: 400;
-				font-style: italic;
-				line-height: 85.2px;
-				font-family: "Recursive", serif;
-			}
-			.hero-section h2 {
-				font-size: 19px;
-				font-weight: 400;
-				line-height: 43.5px;
-				font-family: "Poppins", serif;
-			}
-
-			.secondary-navbar a {
-				font-size: 16px;
-				font-weight: 400;
-				line-height: 34.2px;
-				font-style: italic;
-				color: #909090;
-				font-family: "Recursive", serif;
-			}
-
-			/* tablet style  */
-			@media only screen and (min-width: 576px) {
-				.container {
-					width: 540px;
-				}
-			}
-			/* dekstop style  */
-			@media only screen and (min-width: 1250px) {
-				.container {
-					width: 1236px;
-				}
-				.main-navbar h1 {
-					font-size: 30px;
-				}
-				.main-navbar .links a {
-					font-size: 24px;
-					margin-left: 36px;
-				}
-				.hero-section {
-					padding: 73px 0px 99px;
-				}
-				.hero-section img {
-					margin-bottom: 50px;
-				}
-				.hero-section h1 {
-					font-size: 71px;
-					margin-bottom: 17px;
-				}
-				.hero-section h2 {
-					font-size: 29px;
-				}
-				.secondary-navbar a {
-					font-size: 27px;
-				}
-			}
-		</style>
+		<link rel="stylesheet" href="styles.css" />
 	</head>
 
 	<body>
-		<header>
+		<header class="main-navbar">
 			<div class="container">
-				<nav class="main-navbar">
+				<nav class="main-navbar_content">
 					<h1 class="logo">writings.dev</h1>
 					<div class="links">
 						<a href="http://">categories</a>
@@ -147,9 +27,9 @@
 			</div>
 		</header>
 
-		<section>
+		<section class="hero-section">
 			<div class="container">
-				<div class="hero-section">
+				<div class="hero-section_content">
 					<img src="/public/Logo.png" alt="" />
 					<h1 class="">Writings for Developers</h1>
 					<h2 class="">Curated collection of articles for busy developers</h2>
@@ -157,22 +37,107 @@
 			</div>
 		</section>
 
-		<section>
+		<section class="categories-section">
 			<div class="container">
-				<div class="secondary-navbar" style="display: flex; gap: 36px">
-					<div class="menu-icon" style="display: flex; gap: 10px">
-						<a href=""><img src="/public//Grid Icon.png" alt="" /></a>
-						<a href=""><img src="/public/List Icon.png" alt="" /></a>
+				<div class="categories-section_content">
+					<div class="categories-section_content_icons">
+						<a href="">
+							<svg
+								width="24"
+								height="24"
+								viewBox="0 0 24 24"
+								xmlns="http://www.w3.org/2000/svg"
+							>
+								<g clip-path="url(#clip0_31_323)">
+									<path
+										d="M6 6H0V0H6V6ZM15 0H9V6H15V0ZM24 0H18V6H24V0ZM6 9H0V15H6V9ZM15 9H9V15H15V9ZM24 9H18V15H24V9ZM6 18H0V24H6V18ZM15 18H9V24H15V18ZM24 18H18V24H24V18Z"
+									/>
+								</g>
+								<defs>
+									<clipPath id="clip0_31_323">
+										<rect width="24" height="24" />
+									</clipPath>
+								</defs>
+							</svg>
+						</a>
+						<a href="">
+							<svg
+								width="24"
+								height="24"
+								viewBox="0 0 24 24"
+								xmlns="http://www.w3.org/2000/svg"
+							>
+								<g clip-path="url(#clip0_31_325)">
+									<path
+										d="M0 4.36364H24V0H0V4.36364ZM0 14.1818H24V9.81818H0V14.1818ZM0 24H24V19.6364H0V25.0909V24Z"
+									/>
+								</g>
+								<defs>
+									<clipPath id="clip0_31_325">
+										<rect width="24" height="24" />
+									</clipPath>
+								</defs>
+							</svg>
+						</a>
 					</div>
-					<a href="">JavaScript</a>
-					<a href="">DevOps</a>
-					<a href="">Cloud</a>
-					<a href="">Terraform</a>
-					<a href="">Architecture</a>
-					<a href="">Scalability</a>
-					<a href="">Explainers</a>
+					<a href="" class="link">JavaScript</a>
+					<a href="" class="link">DevOps</a>
+					<a href="" class="link">Cloud</a>
+					<a href="" class="link">Terraform</a>
+					<a href="" class="link">Architecture</a>
+					<a href="" class="link">Scalability</a>
+					<a href="" class="link">Explainers</a>
 				</div>
 			</div>
 		</section>
+
+		<main class="main-section">
+			<div class="container">
+				<div class="main-section_content">
+					<div class="main-section_card">
+						<img src="/public/image 2.jpg" alt="" />
+						<h3 class="title">
+							Build continuous integration pipelines with GitHub Actions
+						</h3>
+						<p class="description">
+							GitHub actions provide a really powerful way to integrate
+							continuous integration and delivery into your applications.
+						</p>
+						<div class="info">
+							<p class="date">June 24, 2022</p>
+							<p class="category">DevOps</p>
+						</div>
+					</div>
+					<div class="main-section_card">
+						<img src="/public/image 2.jpg" alt="" />
+						<h3 class="title">
+							Build continuous integration pipelines with GitHub Actions
+						</h3>
+						<p class="description">
+							GitHub actions provide a really powerful way to integrate
+							continuous integration and delivery into your applications.
+						</p>
+						<div class="info">
+							<p class="date">June 24, 2022</p>
+							<p class="category">DevOps</p>
+						</div>
+					</div>
+					<div class="main-section_card">
+						<img src="/public/image 2.jpg" alt="" />
+						<h3 class="title">
+							Build continuous integration pipelines with GitHub Actions
+						</h3>
+						<p class="description">
+							GitHub actions provide a really powerful way to integrate
+							continuous integration and delivery into your applications.
+						</p>
+						<div class="info">
+							<p class="date">June 24, 2022</p>
+							<p class="category">DevOps</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
 	</body>
 </html>
