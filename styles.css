@@ -1,11 +1,9 @@
-body {
-	margin: 0;
+* {
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
 }
-h1,
-h2,
-h3,
-ul,
-li,
+
 a {
 	margin: 0;
 	padding: 0;
@@ -84,7 +82,7 @@ main {
 }
 .categories-section_content {
 	display: flex;
-
+	overflow: hidden;
 	gap: 36px;
 }
 .categories-section_content_icons {
@@ -115,36 +113,55 @@ main {
 
 .main-section {
 	padding: 94px 0 150px;
+	font-family: "Poppins", serif;
 }
 .main-section_content {
+	margin: auto;
 	display: flex;
+	justify-content: space-around;
 	flex-wrap: wrap;
-	gap: 15px;
+	gap: 37px;
 }
 .main-section_card {
 	border-radius: 15px;
 	background-color: white;
 	color: #232830;
-	font-family: "Poppins", serif;
 	padding: 26px 26px 29px 26px;
 	max-width: 390px;
+	flex: 1 1 21rem;
+	display: flex;
+	flex-direction: column;
+	align-self: normal;
+	flex-wrap: wrap;
 }
 .main-section_card img {
 	width: 100%;
 	margin-bottom: 33px;
 }
+.main-section_card .card-content {
+	display: flex;
+	flex-direction: column;
+	align-self: normal;
+	flex-wrap: wrap;
+}
+
 .main-section_card .title {
 	font-weight: 600;
 	font-size: 19px;
 	line-height: 28.5px;
+	margin-bottom: 11px;
 }
 .main-section_card .description {
 	font-weight: 400;
 	font-size: 16px;
 	line-height: 24px;
+	margin-bottom: 11px;
 }
 .main-section_card .info {
+	display: inline-block;
 	display: flex;
+	margin-top: auto;
+
 	gap: 20px;
 }
 
@@ -182,4 +199,7 @@ main {
 	.categories-section_content .link {
 		font-size: 27px;
 	}
+	/* .main-section_content {
+		justify-content: space-between;
+	} */
 }
