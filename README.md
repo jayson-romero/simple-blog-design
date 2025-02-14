@@ -1,4 +1,4 @@
-# simple-blog-design (Static Website)
+# simple-blog-design (#1 Static Website)
 
 
 ## HTML 
