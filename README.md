@@ -9,13 +9,14 @@
 - CSS Basics
 - CSS Architecture (BEM - Block, Element, Modifier methodology) - a popular naming convention for classes in HTML and CSS
 - Making layouts
+  -  Responsive Cards
     -  Work with Page Container:
-      
       ``` .container {
 	          width: 92%;
 	          margin: auto;
 	          height: 100%;
           	/* border: 2px solid red; */} ```
+
 - Responsive Web Design
     -  Small Screen first
   
