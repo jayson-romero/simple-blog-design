@@ -3,8 +3,8 @@
 ## HTML
 
 - HTML Basics
-  - <svg> - icon for menu
-  - <a> - pagination
+  - `<svg>` - icon for menu
+  - `<a>` - pagination
 - Semantic HTML
 
 ## CSS
@@ -15,19 +15,23 @@
 
   - Responsive Cards
   - Work with Page Container:
-    ``` `.container {
+    ```
+    .container {
           width: 92%;
           margin: auto;
           height: 100%;
-        	/* border: 2px solid red; */} ```
+        	/* border: 2px solid red; */}
+     ```
 
 
 - Responsive Web Design
   - Small Screen first
     
-    ```  `/* smartphone style  */  @media only screen and (max-width: 767px) {}
+    ```
+    /* smartphone style  */  @media only screen and (max-width: 767px) {}
     /* tablet style  */  @media only screen and (min-width: 768px) and (max-width: 1023px) {}
-      /* dekstop style  */  @media only screen and (min-width: 1024px) {} ```
+      /* dekstop style  */  @media only screen and (min-width: 1024px) {}
+    ```
     
 
 ## Using Git Commnands with GitHub
